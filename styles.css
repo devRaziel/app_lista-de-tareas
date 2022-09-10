@@ -182,3 +182,8 @@ body.darkmode .contenedor .faceback{
     transform: rotateY(360deg) ;
     transform: scaleX(-1);
 }
+/*Audio*/
+audio{
+    margin-top: 40px;
+    
+}
