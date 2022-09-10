@@ -26,8 +26,9 @@ body{
     padding: 20px;
     border-radius: 30px;
     overflow: auto;
-    transform: rotateX(0deg);
+    
 }
+
 .contenedor::-webkit-scrollbar {
     width: 2px;
   }
@@ -118,7 +119,7 @@ body.darkmode{
     cursor: pointer;
     display: flex;
     outline: none;
-    transform: rotateY(180deg) ;
+    
 }
 #bdarkmode span{
     width: 30px;
@@ -151,4 +152,31 @@ body.darkmode{
 #bdarkmode.activado::after {
     right: 0;
     left: unset;
+}
+/*flip card*/
+body .contenedor{
+    transition: 0.5s;
+    
+}
+body .contenedor .faceback{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    
+    transition: 0.5s;
+}
+
+body.darkmode .contenedor {
+    
+    transition: 0.5s;
+    
+    transform: rotateY(180deg) ;
+}
+body.darkmode .contenedor .facefront{
+    
+    display: none;
+}
+body.darkmode .contenedor .faceback{
+    
+    transition: 0.5s;
+    transform: rotateY(360deg) ;
 }
