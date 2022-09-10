@@ -169,7 +169,8 @@ body.darkmode .contenedor {
     
     transition: 0.5s;
     
-    transform: rotateY(180deg) ;
+    transform: rotateY(180deg);/*bugg encontrado*/
+    text-align: center;
 }
 body.darkmode .contenedor .facefront{
     
@@ -179,4 +180,5 @@ body.darkmode .contenedor .faceback{
     
     transition: 0.5s;
     transform: rotateY(360deg) ;
+    transform: scaleX(-1);
 }
