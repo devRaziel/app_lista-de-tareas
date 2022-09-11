@@ -159,15 +159,14 @@ body .contenedor{
     
 }
 body .contenedor .faceback{
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
     
-   
+    display: none;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    
 }
 
 body.darkmode .contenedor {
-    
-    
     
     transform: rotateY(180deg);/*bugg encontrado*/
     text-align: center;
@@ -178,9 +177,10 @@ body.darkmode .contenedor .facefront{
 }
 body.darkmode .contenedor .faceback{
     
-    
+    display: block;
     transform: rotateY(360deg) ;
     transform: scaleX(-1);
+    
 }
 /*Audio*/
 audio{
